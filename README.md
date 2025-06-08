@@ -1,6 +1,6 @@
 # WARIP - War Analysis of Routing and Internet Performance
 
-A Golang-based tool for analyzing Internet performance during geopolitical conflicts, specifically designed to study the impact of the 2025 India-Pakistan war on Internet routing and latency using RIPE NCC data sources.
+A tool for analyzing Internet performance during geopolitical conflicts, specifically designed to study the impact of the 2025 India-Pakistan war on Internet routing and latency using RIPE NCC data sources.
 
 ## Overview
 
