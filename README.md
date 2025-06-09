@@ -10,4 +10,5 @@ This project analyzes how the 4-day India-Pakistan conflict in 2025 affected Int
 - Comparing network conditions before and during the conflict
 - Providing automated data collection, analysis, and visualization
 
-This project is for educational purposes only!
+> [!NOTE]
+> This project is for educational purposes only!
