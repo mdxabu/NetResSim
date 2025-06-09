@@ -1,14 +1,8 @@
-# WARIP - War Analysis of Routing and Internet Performance
-
-A tool for analyzing Internet performance during geopolitical conflicts, specifically designed to study the impact of the 2025 India-Pakistan war on Internet routing and latency using RIPE NCC data sources.
-
-## Overview
-
-This project analyzes how the 4-day India-Pakistan conflict in 2025 affected Internet infrastructure in India by:
-- Collecting BGP routing data from RIPE RIS (Routing Information Service)
-- Gathering latency measurements from RIPE Atlas probes
-- Comparing network conditions before and during the conflict
-- Providing automated data collection, analysis, and visualization
-
 > [!NOTE]
 > This project is for educational purposes only!
+
+# Evaluating Internet Resilience Under Simulated Regional Disruption Using RIPE Atlas
+
+This project examines the impact of simulated regional network disruptions on Internet performance using real-world measurement data. The goal is to understand how large-scale events can influence Internet connectivity and routing dynamics, and to evaluate the resilience of Internet infrastructure under stress.
+
+
