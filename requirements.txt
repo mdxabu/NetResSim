@@ -1,6 +1,7 @@
 mrtparse  
 ripe.atlas.cousteau 
 pandas 
-numpy 
-matplotlib 
+numpy>=1.21.0
+matplotlib>=3.5.0
 networkx
+requests>=2.28.0
