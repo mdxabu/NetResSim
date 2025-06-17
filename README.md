@@ -23,6 +23,7 @@ This project analyzes the impact of various network disruption events on Interne
 3. Hengchun Submarine Cable Cut 2006
 4. SEA-ME-WE Disruption 2008
 5. Israel Iran Conflict 2025
+6. Nepal Earthquake 2015
 
 ## Usage
 
