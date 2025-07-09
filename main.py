@@ -52,6 +52,14 @@ def main():
             end_time=datetime.datetime(2015, 4, 26, 0, 0),
             description="Magnitude 7.8 earthquake in Nepal"
         ),
+        NetworkEvent(
+            name="Egypt Network Connectivity",
+            event_type="Internet_disruption",
+            location="Egypt",
+            start_time=datetime.datetime(2025, 7, 5, 0, 0),
+            end_time=datetime.datetime(2025, 7, 7, 0, 0),
+            description="Egyptian network connectivity"
+        )
     ]
 
     event_analyses = []

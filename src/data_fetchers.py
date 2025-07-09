@@ -10,7 +10,8 @@ def fetch_ripe_ris_data(event: NetworkEvent, window: str) -> Dict[str, Any]:
         "Taiwan": "TW",
         "Mediterranean Sea": "EG",
         "Middle East": "IR",
-        "Nepal": "NP"
+        "Nepal": "NP",
+        "Egypt": "EG",
     }
     cc = country_map.get(event.location, "US")
     
