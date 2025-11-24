@@ -29,7 +29,6 @@ This project analyzes the impact of various network disruption events on Interne
 
 ```bash
 pip install -r requirements.txt
-python netres_analysis.py
 ```
 
 ## Output

@@ -1,6 +1,8 @@
 import datetime
-from src.models import NetworkEvent, EventAnalysis
-from src.analyzer import gather_metrics_for_event, analyze_individual_event
+
+from src.analyzer import analyze_individual_event, gather_metrics_for_event
+from src.models import EventAnalysis, NetworkEvent
+
 
 def main():
     events = [
@@ -10,7 +12,7 @@ def main():
             location="Croatia",
             start_time=datetime.datetime(2020, 3, 22, 5, 24),
             end_time=datetime.datetime(2020, 3, 23, 0, 0),
-            description="Magnitude 5.3 earthquake in Zagreb, Croatia"
+            description="Magnitude 5.3 earthquake in Zagreb, Croatia",
         ),
         NetworkEvent(
             name="Puerto Rico Earthquake 2020",
@@ -18,7 +20,7 @@ def main():
             location="Puerto Rico",
             start_time=datetime.datetime(2020, 1, 7, 8, 24),
             end_time=datetime.datetime(2020, 1, 8, 0, 0),
-            description="Magnitude 6.4 earthquake in Puerto Rico"
+            description="Magnitude 6.4 earthquake in Puerto Rico",
         ),
         NetworkEvent(
             name="Hengchun Submarine Cable Cut 2006",
@@ -26,7 +28,7 @@ def main():
             location="Taiwan",
             start_time=datetime.datetime(2006, 12, 26, 12, 26),
             end_time=datetime.datetime(2006, 12, 30, 0, 0),
-            description="Earthquake-induced submarine cable cut near Hengchun, Taiwan"
+            description="Earthquake-induced submarine cable cut near Hengchun, Taiwan",
         ),
         NetworkEvent(
             name="SEA-ME-WE Disruption 2008",
@@ -34,7 +36,7 @@ def main():
             location="Mediterranean Sea",
             start_time=datetime.datetime(2008, 1, 30, 8, 0),
             end_time=datetime.datetime(2008, 2, 2, 0, 0),
-            description="Multiple submarine cable cuts affecting SEA-ME-WE-4 and FLAG"
+            description="Multiple submarine cable cuts affecting SEA-ME-WE-4 and FLAG",
         ),
         NetworkEvent(
             name="Israel Iran Conflict 2025",
@@ -42,7 +44,7 @@ def main():
             location="Middle East",
             start_time=datetime.datetime(2025, 5, 1, 0, 0),
             end_time=datetime.datetime(2025, 5, 10, 0, 0),
-            description="Major regional conflict affecting Internet infrastructure"
+            description="Major regional conflict affecting Internet infrastructure",
         ),
         NetworkEvent(
             name="Nepal Earthquake 2015",
@@ -50,7 +52,15 @@ def main():
             location="Nepal",
             start_time=datetime.datetime(2015, 4, 25, 11, 56),
             end_time=datetime.datetime(2015, 4, 26, 0, 0),
-            description="Magnitude 7.8 earthquake in Nepal"
+            description="Magnitude 7.8 earthquake in Nepal",
+        ),
+        NetworkEvent(
+            name="Nepal Gen Z Protests 2025",
+            event_type="infrastructure_disruption",
+            location="Nepal",
+            start_time=datetime.datetime(2025, 9, 9, 0, 0),
+            end_time=datetime.datetime(2025, 9, 16, 0, 0),
+            description="Protesters stormed Nepalese Federal Parliament Building in Kathmandu, angered by government repression and corruption",
         ),
         NetworkEvent(
             name="Egypt Network Connectivity",
@@ -58,8 +68,8 @@ def main():
             location="Egypt",
             start_time=datetime.datetime(2025, 7, 5, 0, 0),
             end_time=datetime.datetime(2025, 7, 7, 0, 0),
-            description="Egyptian network connectivity"
-        )
+            description="Egyptian network connectivity",
+        ),
     ]
 
     event_analyses = []
@@ -70,12 +80,13 @@ def main():
 
     for analysis in event_analyses:
         analyze_individual_event(analysis)
-    
-    print(f"\n{'='*60}")
+
+    print(f"\n{'=' * 60}")
     print("ANALYSIS COMPLETE")
-    print(f"{'='*60}")
+    print(f"{'=' * 60}")
     print(f"Analyzed {len(event_analyses)} events")
     print("Individual analysis plots saved in 'output/<event_name>/' directories")
+
 
 if __name__ == "__main__":
     main()
